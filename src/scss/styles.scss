@@ -1,0 +1,80 @@
+// Override Bootstrap's Sass default variables
+//
+// Nearly all variables in Bootstrap are written with the `!default` flag.
+// This allows you to override the default values of those variables before
+// you import Bootstrap's source Sass files.
+//
+// Overriding the default variable values is the best way to customize your
+// CSS without writing _new_ styles. For example, change you can either change
+// `$body-color` or write more CSS that override's Bootstrap's CSS like so:
+// `body { color: red; }`.
+// For options, see node_modules/bootstrap/scss/_variables.scss
+
+// Examples:
+
+// $body-bg: black;
+// $body-color: white;
+// $link-hover-color: grey;
+// $font-family-sans-serif: "Helvetica Neue";
+
+// Import Bootstrap styles:
+$primary: #3066BE;
+$body-bg: #ededed;
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+// Fonts:
+
+.slackey-regular {
+  font-family: "Slackey", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.freehand-regular {
+  font-family: "Freehand", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+// Import partials:
+
+// Custom styles:
+
+
+.container-background {
+  background: url("../img/pirate-photos/pirate-ship.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  font-family: 'Slackey', sans-serif;
+}
+
+h3 {
+  font-family: 'Freehand', cursive;
+  color: #ededed;
+}
+
+.display-4 {
+  color: white;
+}
+
+.italic-text {
+  font-style: italic;
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+.card-text {
+  text-align: left;
+}
+
+.footer-text {
+  text-align: center;
+  padding-top: 15px;
+}
