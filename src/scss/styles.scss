@@ -18,9 +18,41 @@
 // $font-family-sans-serif: "Helvetica Neue";
 
 // Import Bootstrap styles:
+$primary: #3066BE;
+$body-bg: #ededed;
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
 // Import partials:
 
 // Custom styles:
+
+
+.container-background {
+  background: url("../img/pirate-photos/pirate-ship.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.slackey-regular {
+  font-family: "Slackey", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+  font-family: 'Slackey', sans-serif;
+}
+
+.display-4 {
+  color: white;
+}
+
+.card-text {
+  text-align: left;
+}
+
+.footer-text {
+  text-align: center;
+}
 
